@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  webmvc:
+    build: .
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_EVIRONMENT=Development
+    depends_on:
+      - db
+  
+  db:
+    image: "microsoft/mssql-server-linux"
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Password123"
+      ACCEPT_EULA: "Y"
