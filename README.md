@@ -1,3 +1,5 @@
+# Sample .Net Core MVC app with Bootstrap 4, Fontawesome, Sass, Webpack, Docker
+
 Dotnet Core
 https://www.microsoft.com/net/download
 
